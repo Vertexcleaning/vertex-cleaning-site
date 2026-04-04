@@ -32,22 +32,23 @@ export default function App() {
             </p>
 
             <div className="hero-buttons">
-              <a href="#contact" className="btn btn-light">
-                Get a Free Quote
-              </a>
-              <a href="#services" className="btn btn-outline">
-                View Services
-              </a>
-              <a
-                href={instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-gold"
-              >
-                Follow on Instagram
-              </a>
-            </div>
-          </div>
+  <a href="#booking" className="btn btn-gold">
+    Get a Free Quote
+  </a>
+
+  <a href="#services" className="btn btn-outline">
+    View Services
+  </a>
+
+  <a
+    href={instagram}
+    target="_blank"
+    rel="noreferrer"
+    className="btn btn-dark"
+  >
+    Follow on Instagram
+  </a>
+</div>
 
           <div className="hero-card">
             <h3>Why Choose Vertex</h3>
