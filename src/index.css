@@ -512,3 +512,9 @@ a {
   width: 32px;
   object-fit: contain;
 }
+.logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
