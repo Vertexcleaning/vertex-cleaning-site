@@ -246,66 +246,71 @@ export default function App() {
             </p>
           </div>
 
-          <form className="booking-form">
-            <div className="form-grid">
-              <div className="form-field">
-                <label htmlFor="name">Full Name</label>
-                <input id="name" type="text" placeholder="Your full name" />
-              </div>
+         <form
+  action="https://formspree.io/f/mdappwyd"
+  method="POST"
+  className="booking-form"
+>
+  <div className="form-field">
+    <label htmlFor="name">Full Name</label>
+    <input
+      name="name"
+      id="name"
+      type="text"
+      placeholder="Your full name"
+      required
+    />
+  </div>
 
-              <div className="form-field">
-                <label htmlFor="phone">Phone Number</label>
-                <input id="phone" type="tel" placeholder="Your phone number" />
-              </div>
+  <div className="form-field">
+    <label htmlFor="phone">Phone Number</label>
+    <input
+      name="phone"
+      id="phone"
+      type="tel"
+      placeholder="Your phone number"
+      required
+    />
+  </div>
 
-              <div className="form-field">
-                <label htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Your email address"
-                />
-              </div>
+  <div className="form-field">
+    <label htmlFor="email">Email</label>
+    <input
+      name="email"
+      id="email"
+      type="email"
+      placeholder="Your email"
+      required
+    />
+  </div>
 
-              <div className="form-field">
-                <label htmlFor="service">Service Needed</label>
-                <select id="service" defaultValue="">
-                  <option value="" disabled>
-                    Select a service
-                  </option>
-                  <option>Residential Cleaning</option>
-                  <option>Office Cleaning</option>
-                  <option>Deep Cleaning</option>
-                  <option>Airbnb Cleaning</option>
-                  <option>Post-Construction Cleaning</option>
-                  <option>Move-In / Move-Out Cleaning</option>
-                  <option>Weekly / Biweekly Cleaning</option>
-                </select>
-              </div>
+  <div className="form-field">
+    <label htmlFor="service">Service</label>
+    <select name="service" id="service" required defaultValue="">
+      <option value="" disabled>Select a service</option>
+      <option>Residential Cleaning</option>
+      <option>Office Cleaning</option>
+      <option>Deep Cleaning</option>
+      <option>Move In / Move Out</option>
+      <option>Airbnb Cleaning</option>
+      <option>Post Construction</option>
+    </select>
+  </div>
 
-              <div className="form-field form-field-full">
-                <label htmlFor="address">Address / Area</label>
-                <input
-                  id="address"
-                  type="text"
-                  placeholder="Home, office, or property address"
-                />
-              </div>
+  <div className="form-field">
+    <label htmlFor="details">Details</label>
+    <textarea
+      name="details"
+      id="details"
+      rows="4"
+      placeholder="Tell us about your cleaning needs"
+    ></textarea>
+  </div>
 
-              <div className="form-field form-field-full">
-                <label htmlFor="details">Project Details</label>
-                <textarea
-                  id="details"
-                  rows="5"
-                  placeholder="Tell us about the space, size, preferred date, and any special requests"
-                ></textarea>
-              </div>
-            </div>
-
-            <button type="button" className="btn btn-gold btn-full">
-              Submit Request
-            </button>
-          </form>
+  <button type="submit" className="btn btn-gold btn-full">
+    Get a Free Quote
+  </button>
+</form>
         </div>
       </section>
 
