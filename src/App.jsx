@@ -20,24 +20,22 @@ export default function App() {
   ];
 
   return (
-    <div>
-      <nav className="nav">
-        <div className="nav-brand">
-  <img src={logo} alt="Vertex Cleaning Logo" className="logo" />
-  <span>Vertex Cleaning</span>
-</div>
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#booking">Booking</a>
-          <a href="#contact">Contact</a>
-          <a href={instagram} target="_blank" rel="noreferrer">
-            Instagram
-          </a>
-        </div>
-      </nav>
+ <nav className="nav">
+  <div className="nav-brand">
+    <img src={logo} alt="Vertex Cleaning Logo" className="logo" />
+  </div>
 
+  <div className="nav-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+    <a href={instagram} target="_blank" rel="noreferrer">
+      Instagram
+    </a>
+  </div>
+</nav>
       <section id="home" className="hero">
         <div className="hero-inner">
           <div className="hero-copy">
