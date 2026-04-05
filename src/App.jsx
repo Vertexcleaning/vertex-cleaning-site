@@ -1,3 +1,5 @@
+import logo from "./assets/hero.png";
+
 export default function App() {
   const instagram = "https://www.instagram.com/vertexcleaning.ca";
   const website = "https://vertexcleanbc.com";
@@ -20,7 +22,10 @@ export default function App() {
   return (
     <div>
       <nav className="nav">
-        <div className="nav-brand">Vertex Cleaning</div>
+        <div className="nav-brand">
+  <img src={logo} alt="Vertex Cleaning Logo" className="logo" />
+  <span>Vertex Cleaning</span>
+</div>
         <div className="nav-links">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
