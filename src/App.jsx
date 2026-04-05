@@ -231,89 +231,96 @@ export default function App() {
         </div>
       </section>
 
-      <section id="booking" className="section section-soft">
-        <div className="container booking-wrap">
-          <div className="booking-copy">
-            <div className="eyebrow">Booking Form</div>
-            <h2>Request a quote or book a cleaning</h2>
-            <p>
-              Fill out the form below and we’ll get back to you with
-              availability and pricing.
-            </p>
-            <p className="booking-note">
-              This is a starter booking form layout. We can connect it to email
-              or form submissions next.
-            </p>
-          </div>
+     <section id="booking" className="section section-soft">
+  <div className="container booking-wrap">
+    <div className="booking-copy">
+      <div className="eyebrow">Booking Form</div>
+      <h2>Request a quote or book a cleaning</h2>
+      <p>
+        Fill out the form below and we’ll get back to you with
+        availability and pricing.
+      </p>
+    </div>
 
-         <form
-  action="https://formspree.io/f/mdappwyd"
-  method="POST"
-  className="booking-form"
->
-  <div className="form-field">
-    <label htmlFor="name">Full Name</label>
-    <input
-      name="name"
-      id="name"
-      type="text"
-      placeholder="Your full name"
-      required
-    />
-  </div>
-
-  <div className="form-field">
-    <label htmlFor="phone">Phone Number</label>
-    <input
-      name="phone"
-      id="phone"
-      type="tel"
-      placeholder="Your phone number"
-      required
-    />
-  </div>
-
-  <div className="form-field">
-    <label htmlFor="email">Email</label>
-    <input
-      name="email"
-      id="email"
-      type="email"
-      placeholder="Your email"
-      required
-    />
-  </div>
-
-  <div className="form-field">
-    <label htmlFor="service">Service</label>
-    <select name="service" id="service" required defaultValue="">
-      <option value="" disabled>Select a service</option>
-      <option>Residential Cleaning</option>
-      <option>Office Cleaning</option>
-      <option>Deep Cleaning</option>
-      <option>Move In / Move Out</option>
-      <option>Airbnb Cleaning</option>
-      <option>Post Construction</option>
-    </select>
-  </div>
-
-  <div className="form-field">
-    <label htmlFor="details">Details</label>
-    <textarea
-      name="details"
-      id="details"
-      rows="4"
-      placeholder="Tell us about your cleaning needs"
-    ></textarea>
-  </div>
-
-  <button type="submit" className="btn btn-gold btn-full">
-    Get a Free Quote
-  </button>
-</form>
+    <form
+      action="https://formspree.io/f/mdappwyd"
+      method="POST"
+      className="booking-form"
+    >
+      <div className="form-grid">
+        <div className="form-field">
+          <label htmlFor="name">Full Name</label>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Your full name"
+            required
+          />
         </div>
-      </section>
 
+        <div className="form-field">
+          <label htmlFor="phone">Phone Number</label>
+          <input
+            name="phone"
+            id="phone"
+            type="tel"
+            placeholder="Your phone number"
+            required
+          />
+        </div>
+
+        <div className="form-field">
+          <label htmlFor="email">Email</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+
+        <div className="form-field">
+          <label htmlFor="service">Service Needed</label>
+          <select name="service" id="service" required defaultValue="">
+            <option value="" disabled>Select a service</option>
+            <option>Residential Cleaning</option>
+            <option>Office Cleaning</option>
+            <option>Deep Cleaning</option>
+            <option>Move In / Move Out</option>
+            <option>Airbnb Cleaning</option>
+            <option>Post Construction</option>
+          </select>
+        </div>
+
+        <div className="form-field form-field-full">
+          <label htmlFor="address">Address / Area</label>
+          <input
+            name="address"
+            id="address"
+            type="text"
+            placeholder="Home, office, or property address"
+          />
+        </div>
+
+        <div className="form-field form-field-full">
+          <label htmlFor="details">Project Details</label>
+          <textarea
+            name="details"
+            id="details"
+            rows="5"
+            placeholder="Tell us about your cleaning needs"
+          ></textarea>
+        </div>
+      </div>
+
+      <button type="submit" className="btn btn-gold btn-full">
+        Submit Request
+      </button>
+    </form>
+  </div>
+</section>
       <section className="section">
         <div className="container insta-banner">
           <h2>See Our Work on Instagram</h2>
